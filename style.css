@@ -1,0 +1,72 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(120deg, #f2f8ff, #ebfff7);
+  min-height: 100vh;
+}
+
+#loginSection {
+  max-width: 400px;
+}
+
+.login-card {
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 16px;
+  border: 1px solid #d8e4ff;
+  box-shadow: 0 16px 40px rgba(16, 73, 158, 0.12);
+}
+
+.brand-line {
+  color: #0d6efd;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.intro-copy {
+  color: #536173;
+  margin-bottom: 14px;
+}
+
+.loader-wrap {
+  margin-top: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #0d6efd;
+  font-weight: 600;
+}
+
+.pulse-ring {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 3px solid rgba(13, 110, 253, 0.25);
+  border-top-color: #0d6efd;
+  animation: ring-spin 0.85s linear infinite;
+}
+
+.job-loader {
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+  color: #ffffff;
+  background: linear-gradient(135deg, #0d6efd, #20c997);
+  animation: pop-up 1s ease-in-out infinite;
+}
+
+@keyframes ring-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pop-up {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-3px) scale(1.06);
+  }
+}
